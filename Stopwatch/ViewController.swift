@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     
     
-    
     private func setTimerLabel(timerLabelToBeSet: Int){
         timerLabel.text = String(timerLabelToBeSet)
         
@@ -55,10 +54,6 @@ class ViewController: UIViewController {
         setTimerLabel(self.time)
         
     }
-
-
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
