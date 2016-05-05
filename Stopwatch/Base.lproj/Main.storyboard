@@ -51,11 +51,11 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-Zg-iAl">
-                                <rect key="frame" x="197" y="211" width="206" height="177"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-Zg-iAl">
+                                <rect key="frame" x="185" y="211" width="230" height="178"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="Kqa-80-wXo"/>
-                                    <constraint firstAttribute="width" constant="206" id="lo4-AJ-gxL"/>
+                                    <constraint firstAttribute="height" constant="178" id="2qd-kD-jCo"/>
+                                    <constraint firstAttribute="width" constant="230" id="rxd-K3-Bci"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="87"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -64,11 +64,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HCS-Zg-iAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zz-vr-oll"/>
                             <constraint firstItem="nWf-0l-Rng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="DA3-wM-2Am"/>
                             <constraint firstItem="HCS-Zg-iAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N27-mP-cVi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nWf-0l-Rng" secondAttribute="bottom" id="QFw-MZ-p93"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PdL-hq-dVM" secondAttribute="trailing" constant="-20" id="aNV-uw-H5M"/>
+                            <constraint firstItem="HCS-Zg-iAl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="agx-hc-gQV"/>
                             <constraint firstItem="PdL-hq-dVM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dwZ-K4-YhY"/>
+                            <constraint firstItem="HCS-Zg-iAl" firstAttribute="top" secondItem="PdL-hq-dVM" secondAttribute="bottom" constant="147" id="gDX-ee-VIJ"/>
                             <constraint firstItem="PdL-hq-dVM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hiQ-PQ-2xP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nWf-0l-Rng" secondAttribute="trailing" constant="-20" id="lX6-bi-X0E"/>
                             <constraint firstItem="HCS-Zg-iAl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vy8-p9-hVD"/>

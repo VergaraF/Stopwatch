@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     private var time:Int = 0
     private var timer = NSTimer()
+    private var isPlaying:Bool = false
     @IBOutlet var timerLabel: UILabel!
     
     
@@ -25,12 +26,18 @@ class ViewController: UIViewController {
     //Stop resets the timer
     @IBAction func stopButton(sender: AnyObject) {
         print("stop")
-        self.time = -1
+        if (self.time != 0){
+            self.time = -1
+        }
         print(self.time)
         
     }
     @IBAction func playButton(sender: AnyObject) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        if !self.isPlaying{
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+            self.isPlaying = true
+        }
+        
         
         print("play")
     }
@@ -38,7 +45,8 @@ class ViewController: UIViewController {
     @IBAction func pauseButton(sender: AnyObject) {
         print("pauuse")
         
-        timer.invalidate()
+        self.timer.invalidate()
+        self.isPlaying = false
     }
     
     func updateTimer(){
